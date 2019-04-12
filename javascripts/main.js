@@ -1,6 +1,11 @@
-// import buttonEvents from './helpers/buttonEvents';
+import buttonEvents from "./helpers/buttonEvents.js";
+// import sandwich from "./components/sandwich.js";
 
 const init = () => {
-    util.buttonEvents();
+    buttonEvents.addEvent();
 };
+
 init();
+
+
+
