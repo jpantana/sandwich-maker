@@ -10,11 +10,6 @@ const meatObject = {
 
 const addMeat = () => {
     return meatObject;
-};
-
-
-const buyButton = () => {
-
-};
+}; 
 
 export default { addMeat };
