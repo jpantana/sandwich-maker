@@ -1,3 +1,48 @@
 body {
-    background-color: white;
+    background-color: rgb(129, 216, 245);
+    font-family: 'Roboto', sans-serif;
+}
+
+.ingredients {
+    /* display: flex; */
+    margin: auto;
+    /* margin-top: 0; */
+    justify-content: center;
+}
+
+.checkoutBtn {
+    margin: auto;
+    margin-top: 30px;
+    /* margin-left: 90%; */
+}
+
+.ingredCard {
+    margin-top: 20px;
+    padding: 10px;
+    background-color: rgb(250, 239, 178);
+    max-height: 250px;
+    min-height: 250px;
+    min-width: 250px;
+    margin-left: 30px;
+}
+
+.priceCard {
+    margin-top: 20px;
+    padding: 10px;
+    background-color: rgb(250, 239, 178);
+    max-height: 250px;
+    min-height: 70px;
+    min-width: 250px;
+    margin-top: 20px;
+}
+
+#costSpan {
+    color: red;
+}
+.h1Toppings {
+    color: white;
+    /* background-color: rgb(0, 162, 255); */
+    padding: 10px;
+    margin-right: 0;
+    margin-left: 0;
 }
