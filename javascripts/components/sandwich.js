@@ -1,6 +1,10 @@
 import meat from "./meat.js";
+import bread from "./bread.js";
+import condiments from "./condiments.js";
+import veggies from "./veggies.js";
+import cheese from "./cheese.js";
 import util from "../helpers/util.js";
-// import buttonEvents from "../helpers/buttonEvents.js";
+import buttonEvents from "../helpers/buttonEvents.js";
 
 // const ingredients = [];
 const cart = [];
@@ -8,15 +12,33 @@ const cart = [];
 const mySandwich = (e) => {
     // e.preventDefault(); 
     let meats = meat.addMeat();
-    console.log(meats);
+    let breads = bread.addBread();
+    let sauce = condiments.addCondiments();
+    let veg = veggies.addVeggies();
+    let cheeses = cheese.addCheese();
     let eventId = e.target.id;
     const newIngredient = {
         name: eventId,
         type: e.target.name,
     }
-
     if (e.target.name === 'meat') {
         newIngredient.price = meats[e.target.id];
+        cart.push(newIngredient);
+        console.log(cart);
+    } else if (e.target.name === 'bread') {
+        newIngredient.price = breads[e.target.id];
+        cart.push(newIngredient);
+        console.log(cart);
+    } else if (e.target.name === 'cheese') {
+        newIngredient.price = cheeses[e.target.id];
+        cart.push(newIngredient);
+        console.log(cart);
+    } else if (e.target.name === 'condiments') {
+        newIngredient.price = sauce[e.target.id];
+        cart.push(newIngredient);
+        console.log(cart);
+    } else if (e.target.name === 'veggies') {
+        newIngredient.price = veg[e.target.id];
         cart.push(newIngredient);
         console.log(cart);
     }
@@ -26,7 +48,6 @@ const mySandwich = (e) => {
                 domString += `  <h3>Ingredients:</h3>`;
                 domString += `  <ul>`;
                 cart.forEach((item) => {
-                    console.log(item.name);
                 domString += `           <li>${item.name}</li>`;
             })
                 domString += `      </ul>`;
@@ -37,8 +58,6 @@ const mySandwich = (e) => {
                 domString += `      <button id="checkoutBtn" class="btn btn-danger checkoutBtn" type="submit">Checkout</button>`;
                 domString += `  </div>`
                 domString += `</div>`;
-
-
         util.printToDom('totalCostDiv', domString);
 };
 

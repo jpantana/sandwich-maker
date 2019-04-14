@@ -20,7 +20,7 @@ body {
     margin-top: 20px;
     padding: 10px;
     background-color: rgb(250, 239, 178);
-    max-height: 250px;
+    /* max-height: 250px; */
     min-height: 250px;
     min-width: 250px;
     margin-left: 30px;
