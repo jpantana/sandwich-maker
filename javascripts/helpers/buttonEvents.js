@@ -1,11 +1,5 @@
-// import meat from "../components/meat.js";
-// import cheese from "../components/cheese.js";
 import sandwich from "../components/sandwich.js";
-// import bread from "../components/bread.js";
-// import condiments from "../components/condiments.js";
-// import veggies from "../components/veggies.js";
-
-
+import buy from "../components/buy.js";
 
 const addEvent = () => {
     document.getElementById('ham').addEventListener('click', sandwich.mySandwich);
@@ -33,7 +27,6 @@ const addEvent = () => {
     document.getElementById('rye').addEventListener('click', sandwich.mySandwich);
     document.getElementById('sourDough').addEventListener('click', sandwich.mySandwich);
 
-    // document.getElementById('checkoutBtn').addEventListener('click', buySandwich);
 };
 
 export default { addEvent };

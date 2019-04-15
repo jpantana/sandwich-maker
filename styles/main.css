@@ -1,5 +1,7 @@
 body {
-    background-color: rgb(129, 216, 245);
+    background-color: white;
+    
+
     font-family: 'Roboto', sans-serif;
 }
 
@@ -19,30 +21,87 @@ body {
 .ingredCard {
     margin-top: 20px;
     padding: 10px;
-    background-color: rgb(250, 239, 178);
-    /* max-height: 250px; */
+    background-color: #eee;
+    background-color: #f1d015;
+    border-radius: 6px;
+    border: none;
+    font-family: 'Heebo', sans-serif;
     min-height: 250px;
     min-width: 250px;
-    margin-left: 30px;
+    max-width: 250px;
+    margin-top: 60px;
 }
 
 .priceCard {
     margin-top: 20px;
     padding: 10px;
-    background-color: rgb(250, 239, 178);
+    background-color: #eee;
+    background-color: #f1d015;
+    border-radius: 6px;
+    border: none;
+    /* font-family: 'Titillium Web', sans-serif; */
+    font-family: 'Heebo', sans-serif;
     max-height: 250px;
     min-height: 70px;
     min-width: 250px;
+    max-width: 250px;
+    /* margin: auto; */
     margin-top: 20px;
 }
 
 #costSpan {
-    color: red;
+    color: rgb(55, 139, 56);
 }
 .h1Toppings {
-    color: white;
+    color: rgb(232, 185, 63);
+    text-shadow: 2px 5px 5px 2px rgb(255, 255, 255);
     /* background-color: rgb(0, 162, 255); */
     padding: 10px;
     margin-right: 0;
     margin-left: 0;
+    margin: auto;
+    font-family: 'Titillium Web', sans-serif;
+    position: absolute;
+    /* width: 40%; */
+    top: -80px;
+    z-index: 10;
 }
+
+#toppingsDiv {
+    background-color: white;
+    border-radius: 6px;
+    font-family: 'Titillium Web', sans-serif;
+    background-color: rgb(55, 139, 56);
+    height: 5em;
+    width: 100%;
+    margin: auto;
+    margin-bottom: 4px;
+    z-index: -1;
+}
+
+#hrId {
+    width: 90%;
+    margin:auto;
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+.inputDivs {
+    margin: auto;
+    justify-content: center;
+    align-content: center;
+}
+
+.order-btn {
+    cursor: pointer;
+    display: inline-block;
+    font-size: 14px;
+    font-weight: 700;
+    line-height: 1;
+    padding: 10px 12px 8px;
+    text-decoration: none;
+    text-transform: uppercase;
+    background-color: #008938;
+    font-family: 'Titillium Web', sans-serif;
+    margin-bottom: 40px;
+}
+

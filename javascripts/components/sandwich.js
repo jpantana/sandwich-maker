@@ -4,13 +4,15 @@ import condiments from "./condiments.js";
 import veggies from "./veggies.js";
 import cheese from "./cheese.js";
 import util from "../helpers/util.js";
-import buttonEvents from "../helpers/buttonEvents.js";
+import buy from "../components/buy.js";
+// import buttonEvents from "../helpers/buttonEvents.js";
 
 // const ingredients = [];
 const cart = [];
 
 const mySandwich = (e) => {
     // e.preventDefault(); 
+    // console.log(e);
     let meats = meat.addMeat();
     let breads = bread.addBread();
     let sauce = condiments.addCondiments();
@@ -44,7 +46,7 @@ const mySandwich = (e) => {
     }
         const sandTotal = cart.reduce((a, b) => {return a + b.price}, 0);
         let domString = '';   
-                domString += `<div class="card m-auto ingredCard">`;
+                domString += `<div class="card ingredCard">`;
                 domString += `  <h3>Ingredients:</h3>`;
                 domString += `  <ul>`;
                 cart.forEach((item) => {
@@ -55,10 +57,11 @@ const mySandwich = (e) => {
                 domString += `<div>`;
                 domString += `  <h3 class="card priceCard">Total Cost: <span id="costSpan">$${sandTotal.toFixed(2)}</span></h3>`;
                 domString += `  </div class="d-flex ml-auto">`;
-                domString += `      <button id="checkoutBtn" class="btn btn-danger checkoutBtn" type="submit">Checkout</button>`;
+                domString += `      <button id="checkoutBtn" class="order-btn btn btn-primary checkoutBtn" type="submit">ORDER NOW</button>`;
                 domString += `  </div>`
                 domString += `</div>`;
         util.printToDom('totalCostDiv', domString);
+        document.getElementById('checkoutBtn').addEventListener('click', buy.buySandwich);
 };
 
 export default { mySandwich };

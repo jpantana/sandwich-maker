@@ -7,14 +7,23 @@
     <title>Sandwich Maker</title>
 
     <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Heebo:900|Titillium+Web:900" rel="stylesheet">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <link rel="stylesheet" href="./styles/main.css">
 </head>
 <body>
-    <div class="container row">
-        <div class="row col-10 no-flex-wrap">
+    <div class="container">
+        <div id="toppingsDiv" class="row col-12 no-flex-wrap">
+            <!-- <h1 class="h1Toppings">Bread</h1>
+            <h1 class="h1Toppings">Meat</h1>
+            <h1 class="h1Toppings">Veggies</h1>
+            <h1 class="h1Toppings">Cheese</h1>
+            <h1 class="h1Toppings">Condiments</h1> -->
+        </div>
 
-            <div class="form-check form-check-inline flex-sm-column">
+        <div class="row col-12 justify-content-center">
+
+            <div class="form-check form-check-inline flex-sm-column inputDivs">
                 <h1 class="h1Toppings">Bread</h1>
                     <input class="form-check-input" type="checkbox" name="bread" id="white" value="white">
                     <label class="form-check-label" for="inlineCheckbox1">White</label>
@@ -28,7 +37,7 @@
                     <input class="form-check-input" type="checkbox" name="bread" id="sourDough" value="sourDough">
                     <label class="form-check-label" for="inlineCheckbox1">Sour Dough</label>
             </div>
-            <div class="form-check form-check-inline flex-sm-column">
+            <div class="form-check form-check-inline flex-sm-column inputDivs">
                 <h1 class="h1Toppings">Meat</h1>
                     <input class="form-check-input" type="checkbox" name="meat" id="ham" value="ham">
                     <label class="form-check-label" for="inlineCheckbox1">Ham</label>
@@ -42,7 +51,7 @@
                     <input class="form-check-input" type="checkbox" name="meat" id="chicken" value="chicken">
                     <label class="form-check-label" for="inlineCheckbox1">Chicken</label>
             </div>
-            <div class="form-check form-check-inline flex-sm-column">
+            <div class="form-check form-check-inline flex-sm-column inputDivs">
                 <h1 class="h1Toppings">Veggies</h1>
                     <input class="form-check-input" name="veggies" type="checkbox" id="tomatoes" value="tomatoes">
                     <label class="form-check-label" for="inlineCheckbox1">Tomatoes</label>
@@ -56,7 +65,7 @@
                     <input class="form-check-input" name="veggies" type="checkbox" id="pickles" value="pickles">
                     <label class="form-check-label" for="inlineCheckbox1">Pickles</label>
             </div>
-            <div class="form-check form-check-inline flex-sm-column">
+            <div class="form-check form-check-inline flex-sm-column inputDivs">
                 <h1 class="h1Toppings">Cheese</h1>
                     <input class="form-check-input" name="cheese" type="checkbox" id="american" value="american">
                     <label class="form-check-label" for="inlineCheckbox1">American</label>
@@ -70,7 +79,7 @@
                     <input class="form-check-input" name="cheese" type="checkbox" id="jack" value="jack">
                     <label class="form-check-label" for="inlineCheckbox1">Jack</label>
             </div>
-            <div class="form-check form-check-inline flex-sm-column">
+            <div class="form-check form-check-inline flex-sm-column inputDivs">
                 <h1 class="h1Toppings">Condiments</h1>
                     <input class="form-check-input" name="condiments" type="checkbox" id="mayo" value="mayo">
                     <label class="form-check-label" for="inlineCheckbox1">Mayo</label>
@@ -85,12 +94,15 @@
                     <label class="form-check-label" for="inlineCheckbox1">Ranch</label>
             </div>
         </div>  <!-- end buttons section -->
+        <hr id="hrId">
 
-        
-        <div class="ml-auto ingredients col-2">
+        <div class="ingredients col-12">
             <div id="totalCostDiv" class="ingredients"></div>
         </div>
     </div>  <!-- end container div -->
+    
+        
+  
     
 
 
